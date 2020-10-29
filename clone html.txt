@@ -1,0 +1,2352 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+      <title>
+       Design Sprint - Module Rapid Prototyping | Innovation Practicum
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.e37eef1ffc63.js"></script>
+  <script type="text/javascript" src="/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+  
+  
+
+    <link href="/static/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="/static/css/lms-main-v1.a6ddf45c71b3.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-main_vendor.a04b73033169.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-application.7bec85e7ca02.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.7dc51240caff0acca5ba.e0cbe6b834dd.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1fd8a9290956',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'js/dateutil_factory': 'js/dateutil_factory.841c29e02056',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.bc5a1361d5f5',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  <meta property="og:title" content="Design Sprint - Module Rapid Prototyping" />
+  <meta property="og:description" content="Welcome to Innovation Practicum - Design Sprint" />
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "Idhaya", "enrollment_mode": null, "upgrade_link": null, "user_id": 279, "course_start": null, "course_end": null, "upgrade_deadline": null, "course_key_fields": {"org": "Forge", "run": "2020_S3", "course": "IP-DS"}, "partition_groups": null, "has_non_audit_enrollments": null, "pacing_type": null, "upgrade_price": null, "course_id": "course-v1:Forge+IP-DS+2020_S3", "has_staff_access": null, "forum_roles": null, "enrollment_time": null, "schedule_start": null, "email": "idhaya.19me@kct.ac.in"}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="ironwood" />
+
+
+
+
+
+</head>
+
+<body class="ltr  lang_en">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/dashboard">
+    
+    <img  class="logo" src="/static/images/logo.png" alt="Innovation Practicum Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">Forge:</span>
+      <span class="course-number">IP-DS</span>
+      
+      <span class="course-name">Design Sprint - Module Rapid Prototyping</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+          <a class="tab-nav-link" href="/courses"
+             aria-current="page">
+             Discover New
+          </a>
+      </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-ironwood.master/index.html" target="_blank">Help</a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">Idhaya</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/Idhaya" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label=More Options role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="course-info">
+
+  
+  <header class="course-profile">
+    <div class="intro-inner-wrapper">
+      <div class="table">
+      <section class="intro">
+        <div class="heading-group">
+          <h1>
+            Design Sprint - Module Rapid Prototyping
+          </h1>
+          <br />
+          <span>Forge</span>
+        </div>
+
+        <div class="main-cta">
+            <a href="/courses/course-v1:Forge+IP-DS+2020_S3/course/">
+
+          <span class="register disabled">You are enrolled in this course</span>
+
+            <strong>View Course</strong>
+            </a>
+
+        </div>
+
+      </section>
+      <div class="media">
+        <div class="hero">
+          <img src="/asset-v1:Forge+IP-DS+2020_S3+type@asset+block@IP.png" alt="" />
+        </div>
+      </div>
+    </div>
+      </div>
+  </header>
+  
+
+  <div class="container">
+
+    
+    <div class="details">
+
+      <div class="inner-wrapper">
+        <section class="about">
+  <h2>Design Sprint - Rapid Prototyping</h2>
+  <p>Design Sprint develops key skill areas essential for a product designer from the perspective of design, its inherent complexity and support them with tools, techniques to prototype rapidly. The hands-on activities during the course are organised to enable the participants to visualise the experience for a user, and learn the roles , responsibilities of a designer in creating and shapping experiences for the user. The participants shall learn through the lenses of system thinking of how existing products work and become capable of selecting , applying various practice tools that will aid them in rapid prototyping.</p>
+
+<p>Upon the successful completion of the course, the students will be able to :
+<br>1 Understand the elements and principle of design in the context of product and service design
+<br>2 Apply user research techniques to meet UX needs of a customer and design a visual prototype
+<br>3 Apply system thinking to reverse engineer a prototype and understand its internal components and their correlations
+<br>4 Use tools to create  mechanical, electrical and SW prototypes in a quick iterative methodology </p>
+</section>
+
+<section class="prerequisites">
+  <h2>Requirements</h2>
+  <p>No Pre-Requisites for this course</p>
+</section>
+
+<section class="faq">
+  <section class="responses">
+    <h2>Frequently Asked Questions</h2>
+    <article class="response">
+      <h3>What web browser should I use?</h3>
+      <p>The Open edX platform works best with current versions of Chrome, Edge, Firefox, Internet Explorer, or Safari.</p>
+      <p>See our <a href="https://edx.readthedocs.org/projects/open-edx-learner-guide/en/latest/front_matter/browsers.html">list of supported browsers</a> for the most up-to-date information.</p>
+    </article>
+
+  </section>
+</section>
+
+      </div>
+    </div>
+    
+
+    <div class="course-sidebar">
+      <div class="course-summary">
+
+        
+
+
+<header>
+  <div class="social-sharing">
+    <div class="sharing-message">Share with friends and family!</div>
+      
+      <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+IP-DS+Design+Sprint+-+Module+Rapid+Prototyping+through+@FORGE_FORCE:+https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-twitter" aria-hidden="true"></span><span class="sr">Tweet that you've enrolled in this course</span>
+      </a>
+      <a href="http://www.facebook.com/FORGEAccelerator" class="share">
+        <span class="icon fa fa-thumbs-up" aria-hidden="true"></span><span class="sr">Post a Facebook message to say you've enrolled in this course</span>
+      </a>
+      <a href="mailto:?subject=Take%20a%20course%20with%20Innovation%20Practicum%20online&body=I%20just%20enrolled%20in%20IP-DS%20Design%20Sprint%20-%20Module%20Rapid%20Prototyping%20through%20Innovation%20Practicum%20https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-envelope" aria-hidden="true"></span><span class="sr">Email someone to say you've enrolled in this course</span>
+      </a>
+  </div>
+</header>
+
+
+        
+        <ol class="important-dates">
+          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">Course Number</p><span class="important-dates-item-text course-number">IP-DS</span></li>
+              
+            <li class="important-dates-item">
+              <span class="icon fa fa-calendar" aria-hidden="true"></span>
+              <p class="important-dates-item-title">Classes Start</p>
+                  
+                  <span class="important-dates-item-text start-date localized_datetime" data-format="shortDate" data-datetime="2020-10-13T00:00:00+0000" data-language="en"></span>
+            </li>
+                
+
+            <li class="important-dates-item">
+                <span class="icon fa fa-calendar" aria-hidden="true"></span>
+                <p class="important-dates-item-title">Classes End</p>
+                    
+                    <span class="important-dates-item-text final-date localized_datetime" data-format="shortDate" data-datetime="2020-11-21T00:00:00+0000" data-language="en"></span>
+            </li>
+
+            <li class="important-dates-item"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">Estimated Effort</p><span class="important-dates-item-text effort">12</span></li>
+
+
+
+
+        </ol>
+        
+    </div>
+
+      
+       
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseTalkReviews.28bdc366155bcf9d6684.b1cdac9bc773.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseTalkReviews({
+        toggleButton: '.toggle-read-write-reviews',
+        loadIcon: '.coursetalk-read-reviews .fa.fa-spinner',
+        readSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dread\u002Dreviews.js",
+        writeSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dwrite\u002Dreviews.js"
+    });
+
+      </script>
+
+
+      
+
+
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="video-modal" class="modal video-modal">
+  <div class="inner-wrapper">
+    
+  </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="About">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="/about">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="blog" href="/blog">Blog</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contact" href="/support/contact_us">Contact</a>
+              </li>
+              <li class="nav-colophon-04">
+                <a id="donate" href="/donate">Donate</a>
+              </li>
+          </ol>
+        </nav>
+
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              <img alt="organization logo" src="http://ip.forgeforward.in/static/images/logo.png">
+            </a>
+          </p>
+        </div>
+
+        <p class="copyright">© Innovation Practicum.  All rights reserved except where noted.  edX, Open edX and their respective logos are registered trademarks of edX Inc. </p>
+
+        <nav class="nav-legal" aria-label="Legal">
+          <ul>
+              <li class="nav-legal-01">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="nav-legal-02">
+                <a href="/tos">Terms of Service</a>
+              </li>
+              <li class="nav-legal-03">
+                <a href="/honor">Honor Code</a>
+              </li>
+            <li><a href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-about-openedx">
+        <p>
+          <a href="http://open.edx.org">
+            <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript">
+  (function() {
+    $(".register").click(function(event) {
+      $("#class_enroll_form").submit();
+      event.preventDefault();
+    });
+
+
+
+    $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
+      if(xhr.status == 200) {
+        if (xhr.responseText == "") {
+          location.href = "/dashboard";
+        }
+        else {
+          location.href = xhr.responseText;
+        }
+      } else if (xhr.status == 403) {
+          location.href = "/register?course_id=course-v1:Forge+IP-DS+2020_S3&enrollment_action=enroll";
+      } else {
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "An error occurred. Please try again later.")
+        ).css("display", "block");
+      }
+    });
+
+
+  })(this)
+  </script>
+
+  <script src="/static/js/course_info.bf6c8c179dab.js"></script>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+      <title>
+       Design Sprint - Module Rapid Prototyping | Innovation Practicum
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.e37eef1ffc63.js"></script>
+  <script type="text/javascript" src="/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+  
+  
+
+    <link href="/static/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="/static/css/lms-main-v1.a6ddf45c71b3.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-main_vendor.a04b73033169.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-application.7bec85e7ca02.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.7dc51240caff0acca5ba.e0cbe6b834dd.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1fd8a9290956',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'js/dateutil_factory': 'js/dateutil_factory.841c29e02056',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.bc5a1361d5f5',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  <meta property="og:title" content="Design Sprint - Module Rapid Prototyping" />
+  <meta property="og:description" content="Welcome to Innovation Practicum - Design Sprint" />
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "Idhaya", "enrollment_mode": null, "upgrade_link": null, "user_id": 279, "course_start": null, "course_end": null, "upgrade_deadline": null, "course_key_fields": {"org": "Forge", "run": "2020_S3", "course": "IP-DS"}, "partition_groups": null, "has_non_audit_enrollments": null, "pacing_type": null, "upgrade_price": null, "course_id": "course-v1:Forge+IP-DS+2020_S3", "has_staff_access": null, "forum_roles": null, "enrollment_time": null, "schedule_start": null, "email": "idhaya.19me@kct.ac.in"}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="ironwood" />
+
+
+
+
+
+</head>
+
+<body class="ltr  lang_en">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/dashboard">
+    
+    <img  class="logo" src="/static/images/logo.png" alt="Innovation Practicum Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">Forge:</span>
+      <span class="course-number">IP-DS</span>
+      
+      <span class="course-name">Design Sprint - Module Rapid Prototyping</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+          <a class="tab-nav-link" href="/courses"
+             aria-current="page">
+             Discover New
+          </a>
+      </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-ironwood.master/index.html" target="_blank">Help</a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">Idhaya</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/Idhaya" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label=More Options role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="course-info">
+
+  
+  <header class="course-profile">
+    <div class="intro-inner-wrapper">
+      <div class="table">
+      <section class="intro">
+        <div class="heading-group">
+          <h1>
+            Design Sprint - Module Rapid Prototyping
+          </h1>
+          <br />
+          <span>Forge</span>
+        </div>
+
+        <div class="main-cta">
+            <a href="/courses/course-v1:Forge+IP-DS+2020_S3/course/">
+
+          <span class="register disabled">You are enrolled in this course</span>
+
+            <strong>View Course</strong>
+            </a>
+
+        </div>
+
+      </section>
+      <div class="media">
+        <div class="hero">
+          <img src="/asset-v1:Forge+IP-DS+2020_S3+type@asset+block@IP.png" alt="" />
+        </div>
+      </div>
+    </div>
+      </div>
+  </header>
+  
+
+  <div class="container">
+
+    
+    <div class="details">
+
+      <div class="inner-wrapper">
+        <section class="about">
+  <h2>Design Sprint - Rapid Prototyping</h2>
+  <p>Design Sprint develops key skill areas essential for a product designer from the perspective of design, its inherent complexity and support them with tools, techniques to prototype rapidly. The hands-on activities during the course are organised to enable the participants to visualise the experience for a user, and learn the roles , responsibilities of a designer in creating and shapping experiences for the user. The participants shall learn through the lenses of system thinking of how existing products work and become capable of selecting , applying various practice tools that will aid them in rapid prototyping.</p>
+
+<p>Upon the successful completion of the course, the students will be able to :
+<br>1 Understand the elements and principle of design in the context of product and service design
+<br>2 Apply user research techniques to meet UX needs of a customer and design a visual prototype
+<br>3 Apply system thinking to reverse engineer a prototype and understand its internal components and their correlations
+<br>4 Use tools to create  mechanical, electrical and SW prototypes in a quick iterative methodology </p>
+</section>
+
+<section class="prerequisites">
+  <h2>Requirements</h2>
+  <p>No Pre-Requisites for this course</p>
+</section>
+
+<section class="faq">
+  <section class="responses">
+    <h2>Frequently Asked Questions</h2>
+    <article class="response">
+      <h3>What web browser should I use?</h3>
+      <p>The Open edX platform works best with current versions of Chrome, Edge, Firefox, Internet Explorer, or Safari.</p>
+      <p>See our <a href="https://edx.readthedocs.org/projects/open-edx-learner-guide/en/latest/front_matter/browsers.html">list of supported browsers</a> for the most up-to-date information.</p>
+    </article>
+
+  </section>
+</section>
+
+      </div>
+    </div>
+    
+
+    <div class="course-sidebar">
+      <div class="course-summary">
+
+        
+
+
+<header>
+  <div class="social-sharing">
+    <div class="sharing-message">Share with friends and family!</div>
+      
+      <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+IP-DS+Design+Sprint+-+Module+Rapid+Prototyping+through+@FORGE_FORCE:+https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-twitter" aria-hidden="true"></span><span class="sr">Tweet that you've enrolled in this course</span>
+      </a>
+      <a href="http://www.facebook.com/FORGEAccelerator" class="share">
+        <span class="icon fa fa-thumbs-up" aria-hidden="true"></span><span class="sr">Post a Facebook message to say you've enrolled in this course</span>
+      </a>
+      <a href="mailto:?subject=Take%20a%20course%20with%20Innovation%20Practicum%20online&body=I%20just%20enrolled%20in%20IP-DS%20Design%20Sprint%20-%20Module%20Rapid%20Prototyping%20through%20Innovation%20Practicum%20https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-envelope" aria-hidden="true"></span><span class="sr">Email someone to say you've enrolled in this course</span>
+      </a>
+  </div>
+</header>
+
+
+        
+        <ol class="important-dates">
+          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">Course Number</p><span class="important-dates-item-text course-number">IP-DS</span></li>
+              
+            <li class="important-dates-item">
+              <span class="icon fa fa-calendar" aria-hidden="true"></span>
+              <p class="important-dates-item-title">Classes Start</p>
+                  
+                  <span class="important-dates-item-text start-date localized_datetime" data-format="shortDate" data-datetime="2020-10-13T00:00:00+0000" data-language="en"></span>
+            </li>
+                
+
+            <li class="important-dates-item">
+                <span class="icon fa fa-calendar" aria-hidden="true"></span>
+                <p class="important-dates-item-title">Classes End</p>
+                    
+                    <span class="important-dates-item-text final-date localized_datetime" data-format="shortDate" data-datetime="2020-11-21T00:00:00+0000" data-language="en"></span>
+            </li>
+
+            <li class="important-dates-item"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">Estimated Effort</p><span class="important-dates-item-text effort">12</span></li>
+
+
+
+
+        </ol>
+        
+    </div>
+
+      
+       
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseTalkReviews.28bdc366155bcf9d6684.b1cdac9bc773.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseTalkReviews({
+        toggleButton: '.toggle-read-write-reviews',
+        loadIcon: '.coursetalk-read-reviews .fa.fa-spinner',
+        readSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dread\u002Dreviews.js",
+        writeSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dwrite\u002Dreviews.js"
+    });
+
+      </script>
+
+
+      
+
+
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="video-modal" class="modal video-modal">
+  <div class="inner-wrapper">
+    
+  </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="About">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="/about">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="blog" href="/blog">Blog</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contact" href="/support/contact_us">Contact</a>
+              </li>
+              <li class="nav-colophon-04">
+                <a id="donate" href="/donate">Donate</a>
+              </li>
+          </ol>
+        </nav>
+
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              <img alt="organization logo" src="http://ip.forgeforward.in/static/images/logo.png">
+            </a>
+          </p>
+        </div>
+
+        <p class="copyright">© Innovation Practicum.  All rights reserved except where noted.  edX, Open edX and their respective logos are registered trademarks of edX Inc. </p>
+
+        <nav class="nav-legal" aria-label="Legal">
+          <ul>
+              <li class="nav-legal-01">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="nav-legal-02">
+                <a href="/tos">Terms of Service</a>
+              </li>
+              <li class="nav-legal-03">
+                <a href="/honor">Honor Code</a>
+              </li>
+            <li><a href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-about-openedx">
+        <p>
+          <a href="http://open.edx.org">
+            <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript">
+  (function() {
+    $(".register").click(function(event) {
+      $("#class_enroll_form").submit();
+      event.preventDefault();
+    });
+
+
+
+    $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
+      if(xhr.status == 200) {
+        if (xhr.responseText == "") {
+          location.href = "/dashboard";
+        }
+        else {
+          location.href = xhr.responseText;
+        }
+      } else if (xhr.status == 403) {
+          location.href = "/register?course_id=course-v1:Forge+IP-DS+2020_S3&enrollment_action=enroll";
+      } else {
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "An error occurred. Please try again later.")
+        ).css("display", "block");
+      }
+    });
+
+
+  })(this)
+  </script>
+
+  <script src="/static/js/course_info.bf6c8c179dab.js"></script>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+      <title>
+       Design Sprint - Module Rapid Prototyping | Innovation Practicum
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.e37eef1ffc63.js"></script>
+  <script type="text/javascript" src="/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+  
+  
+
+    <link href="/static/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="/static/css/lms-main-v1.a6ddf45c71b3.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-main_vendor.a04b73033169.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-application.7bec85e7ca02.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.7dc51240caff0acca5ba.e0cbe6b834dd.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1fd8a9290956',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'js/dateutil_factory': 'js/dateutil_factory.841c29e02056',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.bc5a1361d5f5',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  <meta property="og:title" content="Design Sprint - Module Rapid Prototyping" />
+  <meta property="og:description" content="Welcome to Innovation Practicum - Design Sprint" />
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "Idhaya", "enrollment_mode": null, "upgrade_link": null, "user_id": 279, "course_start": null, "course_end": null, "upgrade_deadline": null, "course_key_fields": {"org": "Forge", "run": "2020_S3", "course": "IP-DS"}, "partition_groups": null, "has_non_audit_enrollments": null, "pacing_type": null, "upgrade_price": null, "course_id": "course-v1:Forge+IP-DS+2020_S3", "has_staff_access": null, "forum_roles": null, "enrollment_time": null, "schedule_start": null, "email": "idhaya.19me@kct.ac.in"}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="ironwood" />
+
+
+
+
+
+</head>
+
+<body class="ltr  lang_en">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/dashboard">
+    
+    <img  class="logo" src="/static/images/logo.png" alt="Innovation Practicum Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">Forge:</span>
+      <span class="course-number">IP-DS</span>
+      
+      <span class="course-name">Design Sprint - Module Rapid Prototyping</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+          <a class="tab-nav-link" href="/courses"
+             aria-current="page">
+             Discover New
+          </a>
+      </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-ironwood.master/index.html" target="_blank">Help</a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">Idhaya</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/Idhaya" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label=More Options role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="course-info">
+
+  
+  <header class="course-profile">
+    <div class="intro-inner-wrapper">
+      <div class="table">
+      <section class="intro">
+        <div class="heading-group">
+          <h1>
+            Design Sprint - Module Rapid Prototyping
+          </h1>
+          <br />
+          <span>Forge</span>
+        </div>
+
+        <div class="main-cta">
+            <a href="/courses/course-v1:Forge+IP-DS+2020_S3/course/">
+
+          <span class="register disabled">You are enrolled in this course</span>
+
+            <strong>View Course</strong>
+            </a>
+
+        </div>
+
+      </section>
+      <div class="media">
+        <div class="hero">
+          <img src="/asset-v1:Forge+IP-DS+2020_S3+type@asset+block@IP.png" alt="" />
+        </div>
+      </div>
+    </div>
+      </div>
+  </header>
+  
+
+  <div class="container">
+
+    
+    <div class="details">
+
+      <div class="inner-wrapper">
+        <section class="about">
+  <h2>Design Sprint - Rapid Prototyping</h2>
+  <p>Design Sprint develops key skill areas essential for a product designer from the perspective of design, its inherent complexity and support them with tools, techniques to prototype rapidly. The hands-on activities during the course are organised to enable the participants to visualise the experience for a user, and learn the roles , responsibilities of a designer in creating and shapping experiences for the user. The participants shall learn through the lenses of system thinking of how existing products work and become capable of selecting , applying various practice tools that will aid them in rapid prototyping.</p>
+
+<p>Upon the successful completion of the course, the students will be able to :
+<br>1 Understand the elements and principle of design in the context of product and service design
+<br>2 Apply user research techniques to meet UX needs of a customer and design a visual prototype
+<br>3 Apply system thinking to reverse engineer a prototype and understand its internal components and their correlations
+<br>4 Use tools to create  mechanical, electrical and SW prototypes in a quick iterative methodology </p>
+</section>
+
+<section class="prerequisites">
+  <h2>Requirements</h2>
+  <p>No Pre-Requisites for this course</p>
+</section>
+
+<section class="faq">
+  <section class="responses">
+    <h2>Frequently Asked Questions</h2>
+    <article class="response">
+      <h3>What web browser should I use?</h3>
+      <p>The Open edX platform works best with current versions of Chrome, Edge, Firefox, Internet Explorer, or Safari.</p>
+      <p>See our <a href="https://edx.readthedocs.org/projects/open-edx-learner-guide/en/latest/front_matter/browsers.html">list of supported browsers</a> for the most up-to-date information.</p>
+    </article>
+
+  </section>
+</section>
+
+      </div>
+    </div>
+    
+
+    <div class="course-sidebar">
+      <div class="course-summary">
+
+        
+
+
+<header>
+  <div class="social-sharing">
+    <div class="sharing-message">Share with friends and family!</div>
+      
+      <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+IP-DS+Design+Sprint+-+Module+Rapid+Prototyping+through+@FORGE_FORCE:+https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-twitter" aria-hidden="true"></span><span class="sr">Tweet that you've enrolled in this course</span>
+      </a>
+      <a href="http://www.facebook.com/FORGEAccelerator" class="share">
+        <span class="icon fa fa-thumbs-up" aria-hidden="true"></span><span class="sr">Post a Facebook message to say you've enrolled in this course</span>
+      </a>
+      <a href="mailto:?subject=Take%20a%20course%20with%20Innovation%20Practicum%20online&body=I%20just%20enrolled%20in%20IP-DS%20Design%20Sprint%20-%20Module%20Rapid%20Prototyping%20through%20Innovation%20Practicum%20https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-envelope" aria-hidden="true"></span><span class="sr">Email someone to say you've enrolled in this course</span>
+      </a>
+  </div>
+</header>
+
+
+        
+        <ol class="important-dates">
+          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">Course Number</p><span class="important-dates-item-text course-number">IP-DS</span></li>
+              
+            <li class="important-dates-item">
+              <span class="icon fa fa-calendar" aria-hidden="true"></span>
+              <p class="important-dates-item-title">Classes Start</p>
+                  
+                  <span class="important-dates-item-text start-date localized_datetime" data-format="shortDate" data-datetime="2020-10-13T00:00:00+0000" data-language="en"></span>
+            </li>
+                
+
+            <li class="important-dates-item">
+                <span class="icon fa fa-calendar" aria-hidden="true"></span>
+                <p class="important-dates-item-title">Classes End</p>
+                    
+                    <span class="important-dates-item-text final-date localized_datetime" data-format="shortDate" data-datetime="2020-11-21T00:00:00+0000" data-language="en"></span>
+            </li>
+
+            <li class="important-dates-item"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">Estimated Effort</p><span class="important-dates-item-text effort">12</span></li>
+
+
+
+
+        </ol>
+        
+    </div>
+
+      
+       
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseTalkReviews.28bdc366155bcf9d6684.b1cdac9bc773.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseTalkReviews({
+        toggleButton: '.toggle-read-write-reviews',
+        loadIcon: '.coursetalk-read-reviews .fa.fa-spinner',
+        readSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dread\u002Dreviews.js",
+        writeSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dwrite\u002Dreviews.js"
+    });
+
+      </script>
+
+
+      
+
+
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="video-modal" class="modal video-modal">
+  <div class="inner-wrapper">
+    
+  </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="About">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="/about">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="blog" href="/blog">Blog</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contact" href="/support/contact_us">Contact</a>
+              </li>
+              <li class="nav-colophon-04">
+                <a id="donate" href="/donate">Donate</a>
+              </li>
+          </ol>
+        </nav>
+
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              <img alt="organization logo" src="http://ip.forgeforward.in/static/images/logo.png">
+            </a>
+          </p>
+        </div>
+
+        <p class="copyright">© Innovation Practicum.  All rights reserved except where noted.  edX, Open edX and their respective logos are registered trademarks of edX Inc. </p>
+
+        <nav class="nav-legal" aria-label="Legal">
+          <ul>
+              <li class="nav-legal-01">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="nav-legal-02">
+                <a href="/tos">Terms of Service</a>
+              </li>
+              <li class="nav-legal-03">
+                <a href="/honor">Honor Code</a>
+              </li>
+            <li><a href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-about-openedx">
+        <p>
+          <a href="http://open.edx.org">
+            <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript">
+  (function() {
+    $(".register").click(function(event) {
+      $("#class_enroll_form").submit();
+      event.preventDefault();
+    });
+
+
+
+    $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
+      if(xhr.status == 200) {
+        if (xhr.responseText == "") {
+          location.href = "/dashboard";
+        }
+        else {
+          location.href = xhr.responseText;
+        }
+      } else if (xhr.status == 403) {
+          location.href = "/register?course_id=course-v1:Forge+IP-DS+2020_S3&enrollment_action=enroll";
+      } else {
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "An error occurred. Please try again later.")
+        ).css("display", "block");
+      }
+    });
+
+
+  })(this)
+  </script>
+
+  <script src="/static/js/course_info.bf6c8c179dab.js"></script>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+      <title>
+       Design Sprint - Module Rapid Prototyping | Innovation Practicum
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.e37eef1ffc63.js"></script>
+  <script type="text/javascript" src="/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+  
+  
+
+    <link href="/static/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+  
+
+    <link href="/static/css/lms-main-v1.a6ddf45c71b3.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-main_vendor.a04b73033169.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-application.7bec85e7ca02.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.7dc51240caff0acca5ba.e0cbe6b834dd.js" ></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1fd8a9290956',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'js/dateutil_factory': 'js/dateutil_factory.841c29e02056',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.bc5a1361d5f5',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  <meta property="og:title" content="Design Sprint - Module Rapid Prototyping" />
+  <meta property="og:description" content="Welcome to Innovation Practicum - Design Sprint" />
+
+  
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "Idhaya", "enrollment_mode": null, "upgrade_link": null, "user_id": 279, "course_start": null, "course_end": null, "upgrade_deadline": null, "course_key_fields": {"org": "Forge", "run": "2020_S3", "course": "IP-DS"}, "partition_groups": null, "has_non_audit_enrollments": null, "pacing_type": null, "upgrade_price": null, "course_id": "course-v1:Forge+IP-DS+2020_S3", "has_staff_access": null, "forum_roles": null, "enrollment_time": null, "schedule_start": null, "email": "idhaya.19me@kct.ac.in"}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="ironwood" />
+
+
+
+
+
+</head>
+
+<body class="ltr  lang_en">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/dashboard">
+    
+    <img  class="logo" src="/static/images/logo.png" alt="Innovation Practicum Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">Forge:</span>
+      <span class="course-number">IP-DS</span>
+      
+      <span class="course-name">Design Sprint - Module Rapid Prototyping</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+          <a class="tab-nav-link" href="/courses"
+             aria-current="page">
+             Discover New
+          </a>
+      </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-ironwood.master/index.html" target="_blank">Help</a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">Idhaya</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/Idhaya" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label=More Options role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="course-info">
+
+  
+  <header class="course-profile">
+    <div class="intro-inner-wrapper">
+      <div class="table">
+      <section class="intro">
+        <div class="heading-group">
+          <h1>
+            Design Sprint - Module Rapid Prototyping
+          </h1>
+          <br />
+          <span>Forge</span>
+        </div>
+
+        <div class="main-cta">
+            <a href="/courses/course-v1:Forge+IP-DS+2020_S3/course/">
+
+          <span class="register disabled">You are enrolled in this course</span>
+
+            <strong>View Course</strong>
+            </a>
+
+        </div>
+
+      </section>
+      <div class="media">
+        <div class="hero">
+          <img src="/asset-v1:Forge+IP-DS+2020_S3+type@asset+block@IP.png" alt="" />
+        </div>
+      </div>
+    </div>
+      </div>
+  </header>
+  
+
+  <div class="container">
+
+    
+    <div class="details">
+
+      <div class="inner-wrapper">
+        <section class="about">
+  <h2>Design Sprint - Rapid Prototyping</h2>
+  <p>Design Sprint develops key skill areas essential for a product designer from the perspective of design, its inherent complexity and support them with tools, techniques to prototype rapidly. The hands-on activities during the course are organised to enable the participants to visualise the experience for a user, and learn the roles , responsibilities of a designer in creating and shapping experiences for the user. The participants shall learn through the lenses of system thinking of how existing products work and become capable of selecting , applying various practice tools that will aid them in rapid prototyping.</p>
+
+<p>Upon the successful completion of the course, the students will be able to :
+<br>1 Understand the elements and principle of design in the context of product and service design
+<br>2 Apply user research techniques to meet UX needs of a customer and design a visual prototype
+<br>3 Apply system thinking to reverse engineer a prototype and understand its internal components and their correlations
+<br>4 Use tools to create  mechanical, electrical and SW prototypes in a quick iterative methodology </p>
+</section>
+
+<section class="prerequisites">
+  <h2>Requirements</h2>
+  <p>No Pre-Requisites for this course</p>
+</section>
+
+<section class="faq">
+  <section class="responses">
+    <h2>Frequently Asked Questions</h2>
+    <article class="response">
+      <h3>What web browser should I use?</h3>
+      <p>The Open edX platform works best with current versions of Chrome, Edge, Firefox, Internet Explorer, or Safari.</p>
+      <p>See our <a href="https://edx.readthedocs.org/projects/open-edx-learner-guide/en/latest/front_matter/browsers.html">list of supported browsers</a> for the most up-to-date information.</p>
+    </article>
+
+  </section>
+</section>
+
+      </div>
+    </div>
+    
+
+    <div class="course-sidebar">
+      <div class="course-summary">
+
+        
+
+
+<header>
+  <div class="social-sharing">
+    <div class="sharing-message">Share with friends and family!</div>
+      
+      <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+IP-DS+Design+Sprint+-+Module+Rapid+Prototyping+through+@FORGE_FORCE:+https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-twitter" aria-hidden="true"></span><span class="sr">Tweet that you've enrolled in this course</span>
+      </a>
+      <a href="http://www.facebook.com/FORGEAccelerator" class="share">
+        <span class="icon fa fa-thumbs-up" aria-hidden="true"></span><span class="sr">Post a Facebook message to say you've enrolled in this course</span>
+      </a>
+      <a href="mailto:?subject=Take%20a%20course%20with%20Innovation%20Practicum%20online&body=I%20just%20enrolled%20in%20IP-DS%20Design%20Sprint%20-%20Module%20Rapid%20Prototyping%20through%20Innovation%20Practicum%20https://ip.forgeforward.in%2Fcourses%2Fcourse-v1%3AForge%2BIP-DS%2B2020_S3%2Fabout" class="share">
+        <span class="icon fa fa-envelope" aria-hidden="true"></span><span class="sr">Email someone to say you've enrolled in this course</span>
+      </a>
+  </div>
+</header>
+
+
+        
+        <ol class="important-dates">
+          <li class="important-dates-item"><span class="icon fa fa-info-circle" aria-hidden="true"></span><p class="important-dates-item-title">Course Number</p><span class="important-dates-item-text course-number">IP-DS</span></li>
+              
+            <li class="important-dates-item">
+              <span class="icon fa fa-calendar" aria-hidden="true"></span>
+              <p class="important-dates-item-title">Classes Start</p>
+                  
+                  <span class="important-dates-item-text start-date localized_datetime" data-format="shortDate" data-datetime="2020-10-13T00:00:00+0000" data-language="en"></span>
+            </li>
+                
+
+            <li class="important-dates-item">
+                <span class="icon fa fa-calendar" aria-hidden="true"></span>
+                <p class="important-dates-item-title">Classes End</p>
+                    
+                    <span class="important-dates-item-text final-date localized_datetime" data-format="shortDate" data-datetime="2020-11-21T00:00:00+0000" data-language="en"></span>
+            </li>
+
+            <li class="important-dates-item"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">Estimated Effort</p><span class="important-dates-item-text effort">12</span></li>
+
+
+
+
+        </ol>
+        
+    </div>
+
+      
+       
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseTalkReviews.28bdc366155bcf9d6684.b1cdac9bc773.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseTalkReviews({
+        toggleButton: '.toggle-read-write-reviews',
+        loadIcon: '.coursetalk-read-reviews .fa.fa-spinner',
+        readSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dread\u002Dreviews.js",
+        writeSrc: "//d3q6qq2zt8nhwv.cloudfront.net/s/js/widgets/coursetalk\u002Dwrite\u002Dreviews.js"
+    });
+
+      </script>
+
+
+      
+
+
+  </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div id="video-modal" class="modal video-modal">
+  <div class="inner-wrapper">
+    
+  </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized_datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="grid-container"
+    >
+      <div class="colophon">
+        <nav class="nav-colophon" aria-label="About">
+          <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="/about">About</a>
+              </li>
+              <li class="nav-colophon-02">
+                <a id="blog" href="/blog">Blog</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contact" href="/support/contact_us">Contact</a>
+              </li>
+              <li class="nav-colophon-04">
+                <a id="donate" href="/donate">Donate</a>
+              </li>
+          </ol>
+        </nav>
+
+
+        <div class="wrapper-logo">
+          <p>
+            <a href="/">
+              <img alt="organization logo" src="http://ip.forgeforward.in/static/images/logo.png">
+            </a>
+          </p>
+        </div>
+
+        <p class="copyright">© Innovation Practicum.  All rights reserved except where noted.  edX, Open edX and their respective logos are registered trademarks of edX Inc. </p>
+
+        <nav class="nav-legal" aria-label="Legal">
+          <ul>
+              <li class="nav-legal-01">
+                <a href="/privacy">Privacy Policy</a>
+              </li>
+              <li class="nav-legal-02">
+                <a href="/tos">Terms of Service</a>
+              </li>
+              <li class="nav-legal-03">
+                <a href="/honor">Honor Code</a>
+              </li>
+            <li><a href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-about-openedx">
+        <p>
+          <a href="http://open.edx.org">
+            <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+  
+  <script type="text/javascript">
+  (function() {
+    $(".register").click(function(event) {
+      $("#class_enroll_form").submit();
+      event.preventDefault();
+    });
+
+
+
+    $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
+      if(xhr.status == 200) {
+        if (xhr.responseText == "") {
+          location.href = "/dashboard";
+        }
+        else {
+          location.href = xhr.responseText;
+        }
+      } else if (xhr.status == 403) {
+          location.href = "/register?course_id=course-v1:Forge+IP-DS+2020_S3&enrollment_action=enroll";
+      } else {
+        $('#register_error').text(
+            (xhr.responseText ? xhr.responseText : "An error occurred. Please try again later.")
+        ).css("display", "block");
+      }
+    });
+
+
+  })(this)
+  </script>
+
+  <script src="/static/js/course_info.bf6c8c179dab.js"></script>
+
+
+  
+
+
+
+  <script type="text/javascript" src="/static/js/vendor/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/utils/navigation.08930e16ab3d.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/header/header.309a1243e175.js"></script>
+  
+</body>
+</html>
