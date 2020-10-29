@@ -1,0 +1,1147 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+      <title>
+       Course | IP-DS | Innovation Practicum
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.e37eef1ffc63.js"></script>
+  <script type="text/javascript" src="/static/js/ie11_find_array.bd1c6dc7a133.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+  
+  
+
+    <link href="/static/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css" />
+
+
+
+      <link rel="stylesheet" href="/static/css/bootstrap/lms-main.6929a383e148.css" type="text/css" media="all" />
+
+    
+    <script type="text/javascript" src="/static/js/lms-base-vendor.cb449c35a4fc.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="/static/js/lms-base-application.2062f84b79fa.js" charset="utf-8"></script>
+
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.7dc51240caff0acca5ba.e0cbe6b834dd.js" ></script>
+
+
+    <script type="text/javascript" src="/static/common/js/vendor/bootstrap.bundle.6a7d42b0348b.js"></script>
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+'hls': 'common/js/vendor/hls.8f15a0109b05',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.1fd8a9290956',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.7f46663f97b4',
+'js/dateutil_factory': 'js/dateutil_factory.841c29e02056',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'js/views/message_banner': 'js/views/message_banner.bc5a1361d5f5',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "Idhaya", "enrollment_mode": "audit", "upgrade_link": null, "user_id": 279, "course_start": "2020-10-13T00:00:00+00:00", "course_end": "2020-11-21T00:00:00+00:00", "upgrade_deadline": null, "course_key_fields": {"org": "Forge", "run": "2020_S3", "course": "IP-DS"}, "partition_groups": {"Enrollment Track Groups": [1, "Audit"]}, "has_non_audit_enrollments": false, "pacing_type": "self_paced", "upgrade_price": "Free", "course_id": "course-v1:Forge+IP-DS+2020_S3", "has_staff_access": false, "forum_roles": [["Student"]], "enrollment_time": "2020-10-17T08:32:02.031604+00:00", "schedule_start": null, "email": "idhaya.19me@kct.ac.in"}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="ironwood" />
+
+
+
+
+
+</head>
+
+<body class="ltr None lang_en">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/dashboard">
+    
+    <img  class="logo" src="/static/images/logo.png" alt="Innovation Practicum Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">Forge:</span>
+      <span class="course-number">IP-DS</span>
+      
+      <span class="course-name">Design Sprint - Module Rapid Prototyping</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+          <a class="tab-nav-link" href="/courses"
+             aria-current="page">
+             Discover New
+          </a>
+      </div>
+  </div>
+  <div class="secondary">
+    <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-ironwood.master/index.html" target="_blank">Help</a>
+    </div>
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/static/images/profiles/default_50.3455a6581573.png" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">Idhaya</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/Idhaya" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+    <div class="mobile-menu hidden" aria-label=More Options role="menu" id="mobile-menu"></div>
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content" dir="ltr">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <nav class="navbar course-tabs pb-0 navbar-expand" aria-label="Course">
+            <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item active">
+                        <a href="/courses/course-v1:Forge+IP-DS+2020_S3/course/" class="nav-link">
+                            Course
+                                <span class="sr-only">, current location</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:Forge+IP-DS+2020_S3/progress" class="nav-link">
+                            Progress
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:Forge+IP-DS+2020_S3/781afc68a2ce49e1a8d51b7f7f3109bf/" class="nav-link">
+                            Syllabus
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/static/paragon/static/paragon.min.2e6b88936ef5.css" />
+
+
+
+<div class="course-view page-content-container" id="course-container">
+
+
+
+    <header class="page-header has-secondary">
+        <div class="page-header-main">
+            <nav aria-label="Course Outline" class="sr-is-focusable" tabindex="-1">
+                <h2 class="hd hd-3 page-title">Design Sprint - Module Rapid Prototyping</h2>
+            </nav>
+        </div>
+        <div class="page-header-secondary">
+            <div class="form-actions">
+                    <a class="btn btn-primary action-resume-course" href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@course+block@course">
+                            <span data-action-type="start">Start Course</span>
+                    </a>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="page-content-main">
+                
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseGoals.f1cec630cc6bcf51b120.bb9841ecda1f.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseGoals({
+        goalApiUrl: "http://ip.forgeforward.in/api/course_goals/v0/course_goals/",
+        courseId: "course\u002Dv1:Forge+IP\u002DDS+2020_S3",
+        username: "Idhaya",
+    });
+
+      </script>
+
+
+
+
+                
+
+
+
+
+
+
+
+<main role="main" class="course-outline" id="main" tabindex="-1">
+        <button class="btn btn-primary"
+                id="expand-collapse-outline-all-button"
+                aria-expanded="false"
+                aria-controls="course-outline-block-tree"
+                >
+          <span class="expand-collapse-outline-all-extra-padding" id="expand-collapse-outline-all-span">Expand All</span>
+        </button>
+        <ol class="block-tree accordion"
+            id="course-outline-block-tree"
+            aria-labelledby="expand-collapse-outline-all-button">
+            
+                <li class="outline-item section">
+                    <button class="section-name accordion-trigger"
+                            aria-expanded="true"
+                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@chapter+block@cc0cd7671adc4e6289b58c3b241d6936_contents"
+                            id="block-v1:Forge+IP-DS+2020_S3+type@chapter+block@cc0cd7671adc4e6289b58c3b241d6936">
+                        <span class="fa fa-chevron-right fa-rotate-90" aria-hidden="true"></span>
+                        <h3 class="section-title">Rapid Prototyping</h3>
+                    </button>
+                    <ol class="outline-item accordion-panel "
+                        id="block-v1:Forge+IP-DS+2020_S3+type@chapter+block@cc0cd7671adc4e6289b58c3b241d6936_contents"
+                        aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@chapter+block@cc0cd7671adc4e6289b58c3b241d6936">
+                
+                      <li class="subsection accordion current">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@61063607f8a441559d817a824d0c0ad5"
+                                            aria-expanded="true"
+                                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@61063607f8a441559d817a824d0c0ad5_contents">
+                                        <span class="fa fa-chevron-right fa-rotate-90"
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Prototyping 101
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel "
+                                    id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@61063607f8a441559d817a824d0c0ad5_contents"
+                                    aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@61063607f8a441559d817a824d0c0ad5"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@01b2c28b1f04464190527ee0b8f6ed14"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@01b2c28b1f04464190527ee0b8f6ed14">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Why Prototyping?
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@63bfbaef17a5418f9f1f614c51824159"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@63bfbaef17a5418f9f1f614c51824159">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Need for Prototyping
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@52eb7b9d4c9e4a198531392644befaa5"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@52eb7b9d4c9e4a198531392644befaa5_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Mechanical Prototyping
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@52eb7b9d4c9e4a198531392644befaa5_contents"
+                                    aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@52eb7b9d4c9e4a198531392644befaa5"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@012653de2cb2468cb6256da0b19baf45"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@012653de2cb2468cb6256da0b19baf45">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Introduction to Mechanical Prototyping
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@7ae43414b9f24094ab6644d2de43c746"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@7ae43414b9f24094ab6644d2de43c746">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Basic Geometry, Points, Lines and Planes
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d8efd92464794a898f8976ca3c6af331"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d8efd92464794a898f8976ca3c6af331">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Working with Fusion 360
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@6328d5df0a8f495482ef01df37433213"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@6328d5df0a8f495482ef01df37433213">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Introduction to 3D Printing
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@de8383246c5b417796fb9d52c0cc5f5d"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@de8383246c5b417796fb9d52c0cc5f5d">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Working With Slicer Software
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1a773d814b8f44b1a9acf778919b9976"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1a773d814b8f44b1a9acf778919b9976">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Introduction to Laser Cutting
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@218c5a1fb6f34d21bb8c61b603049193"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@218c5a1fb6f34d21bb8c61b603049193">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Working With RD Works Software
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@4b0e14dacc0e42c6a61f09f3d3e76620"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@4b0e14dacc0e42c6a61f09f3d3e76620">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Additive Manufacturing
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@5ea32a65c6794e37b0da434b446426cb"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@5ea32a65c6794e37b0da434b446426cb_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Electronic Prototyping
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@5ea32a65c6794e37b0da434b446426cb_contents"
+                                    aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@5ea32a65c6794e37b0da434b446426cb"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@3d61fd7528514054b3ac9a6895d41b6f"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@3d61fd7528514054b3ac9a6895d41b6f">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Introduction to Electronic Prototyping
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1ccef1d9c5674ec7a6105e2b9fd5ed05"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1ccef1d9c5674ec7a6105e2b9fd5ed05">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Essential Components for Electronics Prototyping
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1268022a9d5b4a0c93986fb0b5db8ff6"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1268022a9d5b4a0c93986fb0b5db8ff6">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Process Involved in Electronic Prototyping
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@46aaefa59d32435a896915e222f2f76f"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@46aaefa59d32435a896915e222f2f76f">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Simulation Tool - Working with Tinker CAD
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d587bb05ece4451cb217ce631ca13eed"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d587bb05ece4451cb217ce631ca13eed">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Designing a Schematic - KiCAD
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@65238239ace84b2d8aa1d97e4cf67dd9"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@65238239ace84b2d8aa1d97e4cf67dd9">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Foot Print Selection
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e313753ce2ea40e4b9d0d52a03cc9b30"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e313753ce2ea40e4b9d0d52a03cc9b30">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                PCB Design
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@a675a13b519d4bd8becc406029841bf4"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@a675a13b519d4bd8becc406029841bf4">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Documentation
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@3d41be54713448bd965c96503367695f"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@3d41be54713448bd965c96503367695f_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Software Prototyping
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@3d41be54713448bd965c96503367695f_contents"
+                                    aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@3d41be54713448bd965c96503367695f"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@c554eb40ee644bcdac4383443e5f0785"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@c554eb40ee644bcdac4383443e5f0785">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                What is Version Control
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1b2fcddf01704b39ab8c0c24001b9915"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@1b2fcddf01704b39ab8c0c24001b9915">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                What is GitHub
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@042a99e8bd73401080c19645c046ee97"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@042a99e8bd73401080c19645c046ee97">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                The Git &amp; GitHub Tutorial Guides
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@b5ab3252103d4fa2a4a18f1a19f3b989"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@b5ab3252103d4fa2a4a18f1a19f3b989">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Working with GitBash &amp; GitHub
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@6a222fbe255f4302868af23707eb733b"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@6a222fbe255f4302868af23707eb733b">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                What is Continous Integration
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@4f6a92403cf94272b00da9a0b84e7bab"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@4f6a92403cf94272b00da9a0b84e7bab">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                GitHub Actions
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e5d68f2b60bb4a0aa1db9395d7de4732"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e5d68f2b60bb4a0aa1db9395d7de4732">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Setting Up Github Actions
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e6201a0bbdd049aa8b0a9076a67dde52"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@e6201a0bbdd049aa8b0a9076a67dde52">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Platform as a Service
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@5acd3aac36af4f41bf52f266a96e88d7"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@5acd3aac36af4f41bf52f266a96e88d7">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Deploying App onto Heroku
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@9f7a4bf0c9184f7bb5d73bab9b7395b0"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@9f7a4bf0c9184f7bb5d73bab9b7395b0_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Assignments
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@9f7a4bf0c9184f7bb5d73bab9b7395b0_contents"
+                                    aria-labelledby="block-v1:Forge+IP-DS+2020_S3+type@sequential+block@9f7a4bf0c9184f7bb5d73bab9b7395b0"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                                href="http://ip.forgeforward.in/courses/course-v1:Forge+IP-DS+2020_S3/jump_to/block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d8d6769da8c54c5fa969b31c88685a01"
+                                            id="block-v1:Forge+IP-DS+2020_S3+type@vertical+block@d8d6769da8c54c5fa969b31c88685a01">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Rapid Prototyping Assignments
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                    </ol>
+                </li>
+        </ol>
+</main>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseOutline.47803059a182e233c155.27212b7f286c.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseOutline();
+
+      </script>
+
+
+        </div>
+        <aside class="page-content-secondary course-sidebar">
+                <div class="section section-tools">
+                    <h3 class="hd-6 section-title">Course Tools</h3>
+                    <ul class="list-unstyled">
+                            <li class="course-tool">
+                                <a class="course-tool-link" data-analytics-id="edx.bookmarks" href="/courses/course-v1:Forge+IP-DS+2020_S3/bookmarks/">
+                                    <span class="icon fa fa-bookmark" aria-hidden="true"></span>
+                                    Bookmarks
+                                </a>
+                            </li>
+                            <li class="course-tool">
+                                <a class="course-tool-link" data-analytics-id="edx.updates" href="/courses/course-v1:Forge+IP-DS+2020_S3/course/updates">
+                                    <span class="icon fa fa-newspaper-o" aria-hidden="true"></span>
+                                    Updates
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="section section-dates">
+                    
+
+
+
+
+
+<h3 class="hd hd-6 handouts-header">Important Course Dates</h3>
+
+    
+
+<div class="date-summary-container">
+    <div class="date-summary date-summary-todays-date">
+                <span class="hd hd-6 heading localized-datetime" data-datetime="2020-10-29 02:31:39.840436+00:00" data-string="Today is {date}" data-timezone="None" data-language="en"></span>
+    </div>
+</div>
+
+    
+
+<div class="date-summary-container">
+    <div class="date-summary date-summary-end-date">
+                <span class="hd hd-6 heading">Course End</span>
+            <p class="hd hd-6 date localized-datetime" data-format="shortDate" data-datetime="2020-11-21 00:00:00+00:00" data-timezone="None" data-language="en" data-string="in 3 weeks - {date}"></p>
+            <p class="description">After this date, course content will be archived.</p>
+    </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.841c29e02056.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform('.localized-datetime');
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+                </div>
+        </aside>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseSock.207e89e610bb26d251c9.713b569749c9.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseSock({
+        el:'.verification-sock'
+    });
+
+      </script>
+
+
+</div>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseHome.8f79f1130ddecdfd2846.f317ec525dd8.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseHome({
+        courseRunKey: "course\u002Dv1:Forge+IP\u002DDS+2020_S3",
+        resumeCourseLink: ".action-resume-course",
+        courseToolLink: ".course-tool-link",
+        goalApiUrl: "http://ip.forgeforward.in/api/course_goals/v0/course_goals/",
+        username: "Idhaya",
+        courseId: "course\u002Dv1:Forge+IP\u002DDS+2020_S3",
+    });
+
+      </script>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/Enrollment.386cf85a0a692c7cfe27.2250e39dea08.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseEnrollment('.enroll-btn', 'course\u002Dv1:Forge+IP\u002DDS+2020_S3');
+
+      </script>
+
+
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="container-fluid wrapper-footer">
+    <footer>
+      <div class="row">
+        <div class="col-md-9">
+          <nav class="navbar site-nav navbar-expand-sm" aria-label="About">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/support/contact_us">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/donate">Donate</a>
+                </li>
+            </ul>
+          </nav>
+
+          <p class="copyright">© Innovation Practicum.  All rights reserved except where noted.  edX, Open edX and their respective logos are registered trademarks of edX Inc. </p>
+
+          <nav class="navbar legal-nav navbar-expand-sm" aria-label="Legal">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/privacy">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tos">Terms of Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/honor">Honor Code</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3">
+            <div class="footer-about-openedx">
+              <p>
+                <a href="http://open.edx.org">
+                  <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+                </a>
+              </p>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+<script type="text/javascript">
+    // Activating Mathjax accessibility files
+    window.MathJax = {
+        menuSettings: {
+            collapsible: true,
+            autocollapse: true,
+            explorer: true
+        }
+    };
+</script>
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+
+
+  
+
+  
+
+
+
+  <script type="text/javascript" src="/static/js/vendor/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/utils/navigation.08930e16ab3d.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/js/header/header.309a1243e175.js"></script>
+  
+</body>
+</html>
